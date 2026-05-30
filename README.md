@@ -31,7 +31,6 @@ data/
 
 ### 3. 실험 실행
 전체 학습 및 평가 파이프라인을 실행합니다. (GPU 환경 권장)
-python ml_term_project.py
 
 ---
 
