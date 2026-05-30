@@ -35,6 +35,9 @@ data/
 ```bash
 python ML_Term_Project.py
 ```
+
+### 추가) 실제 Colab에서 사용한 주피터 노트북 파일
+├── ML_Term_Project.ipynb
 ---
 
 ## 파이프라인 요약
