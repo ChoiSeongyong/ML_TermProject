@@ -36,15 +36,10 @@ data/
 python ML_Term_Project.py
 ```
 
-### 4. 실제 Colab에서 사용한 주피터 노트북 파일
-ML_Term_Project.ipynb
-도 첨부하였습니다.
+### 4. ML_Term_Project.ipynb 실제 Colab에서 사용한 주피터 노트북 파일
 
 ※ GitHub 자체 렌더링 서버의 일시적인 지연으로 인해 웹 화면에서 'An error occurred' 메시지가 뜰 수 있으나, 파일은 정상입니다. 다운로드하시면 정상적으로 확인 및 실행이 가능합니다.
 
----
-
-## 🛠️ 실행 가이드
 ---
 
 ## 파이프라인 요약
