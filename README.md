@@ -38,9 +38,13 @@ python ml_term_project.py
 ## 파이프라인 요약
 
 **데이터 파이프라인:**
+   
    **Data Split:** Train / Val / Test = 8 : 1 : 1 비율로 계층적 분할 (Stratified Split)을 적용하여 클래스 비율 유지
+   
    **Augmentation (Albumentations):** `RandomResizedCrop`, `HorizontalFlip`, `VerticalFlip`, `ShiftScaleRotate`, `Normalize`를 통한 강건한 전처리 및 증강 파이프라인 구축
-**클래스 불균형 해결:** 각 클래스의 빈도 역수(Inverse-Frequency)를 기반으로 계산된 `weighted CrossEntropyLoss`를 적용하여 소수 클래스에 대한 학습력 강화 **하이퍼파라미터 튜닝:** ResNet-50과 Swin-T 각각에 대해 **Validation Macro F1-Score**를 기준으로 Learning Rate Grid Search를 수행 (5 Epochs)한 뒤, 최적의 LR로 본 학습(20 Epochs) 진행
+
+**클래스 불균형 해결:** 각 클래스의 빈도 역수(Inverse-Frequency)를 기반으로 계산된 `weighted CrossEntropyLoss`를 적용하여 소수 클래스에 대한 학습력 강화 
+**하이퍼파라미터 튜닝:** ResNet-50과 Swin-T 각각에 대해 **Validation Macro F1-Score**를 기준으로 Learning Rate Grid Search를 수행 (5 Epochs)한 뒤, 최적의 LR로 본 학습(20 Epochs) 진행
 **다각적 성능 평가:** Accuracy, Macro/Weighted F1-Score, ROC-AUC (One-vs-Rest) 및 오분류 쌍 히트맵(Misclassification Pairs Heatmap) 분석
 
 학습·평가 figure와 `test_metrics_summary.csv`, `experiment_config.json` 등은 실행 후 `figures/`에 저장됩니다.
